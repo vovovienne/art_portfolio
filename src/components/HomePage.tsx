@@ -1,12 +1,12 @@
 import React from 'react';
 import Menu from './Menu';
+import { BackgroundImg } from './styled/HomePage.styled';
 
 const HomePage = () => {
   return (
     <div className = "homepage">
-        <Menu></Menu>
-        <img></img>
-    </div>
+      <BackgroundImg src ="/imgs/splashart.png" ></BackgroundImg>
+  </div>
   )
 }
 

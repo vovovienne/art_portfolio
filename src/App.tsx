@@ -1,12 +1,12 @@
 import LoadingProvider from './LoadingProvider';
 import Menu from './components/Menu';
 import HomePage from './components/HomePage';
-//import {BrowserRouter as Router, Route} from 'react-router-dom';
+import Content from './components/Content';
 
 const App = () => {
     return (
         <LoadingProvider>
-            <HomePage></HomePage>
+            <Content></Content>
         </LoadingProvider>
     );
 }

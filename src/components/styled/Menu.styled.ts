@@ -1,15 +1,17 @@
 import styled from "styled-components";
 //${}
 
-const MenuButton = styled.div`
-    width: 0px;
-    height: 0px;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 15px solid #e4e5f1;
+const MenuButton = styled.svg`
+    position: relative;
+    width: 40px;
+    fill: #e4e5f1;
+    margin-left: 10px;
+    
 `;
 
 const MenuStyle = styled.div`
+    position: fixed;
+    z-index: 1;
 
     .dropdown.active {
         opacity: 1;
@@ -31,10 +33,12 @@ const MenuStyle = styled.div`
 `;
 
 const DropdownBar = styled.div`
+    position: absolute;
     width: 30px;
     text-align: left;
+    margin-top: -px;
+    margin-left:12px;
     height: 0;
-    padding: 6px;
     
 
     & > * {
